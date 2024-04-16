@@ -15,6 +15,6 @@
     background: transparent;  /* Optional: just make scrollbar invisible */
     -webkit-appearance: none;
     }
-.big_hand_group{width: 140vw;  padding: 0 4.4444vw;}
+.big_hand_group{width: 140.3vw;  padding: 0 4.4444vw;}
 .big_hand_group::after{content: ''; display: block; clear: both;}
 .big_hand_name{display: inline-block; text-align: center; padding: 1.3889vw 3.6111vw; border-radius: 27.7778vw; border: 0.2778vw solid #e0e0e0; float: left;}
