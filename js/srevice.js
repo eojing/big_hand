@@ -7,7 +7,13 @@ accordion.forEach(function(i){
         accordion.forEach(function(e){
             e.classList.remove('accordion_on');
         });
-    i.classList.add('accordion_on');
+        
+            if(i.classList.contains('accordion_on')){
+                i.classList.remove('accordion_on');
+            } else{
+                i.classList.add('accordion_on');
+            }
+        
     });
 
 });
