@@ -12,7 +12,7 @@
 .bottom_wrap{padding-bottom: 11.6667vw;}
 .tag{margin-bottom: 3.8889vw;}
 .item{display: flex; border-radius: 3.7028vw;}
-.man_img{max-width: 11.1111vw}
+.man_img{max-width: 11.1111vw; width: 100%;}
 .item_border{border: 0.2778vw solid #e0e0e0;}
 
 
