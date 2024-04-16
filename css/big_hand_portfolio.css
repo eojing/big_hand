@@ -1,0 +1,19 @@
+.header_name{display: flex; position: relative; height: 11.1111vw; justify-content: center; align-items: center;}
+.header_name h1{margin: 0 auto;}
+.close, .menu{position: absolute; max-width: 6.1111vw; width: 100%; right: 2.7778vw;}
+.back{position: absolute; max-width: 6.1111vw; width: 100%; left: 2.7778vw;}
+.scroll_wrap{overflow: scroll;}
+.scroll_container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+    
+    .scroll_container::-webkit-scrollbar{
+    display: none;
+    width: 0;  /* Remove scrollbar space */
+    height: 0;
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    -webkit-appearance: none;
+    }
+.big_hand_group{width: 140vw;  padding: 0 4.4444vw;}
+.big_hand_name{display: inline-block; text-align: center; padding: 1.3889vw 3.6111vw; border-radius: 27.7778vw; border: 0.2778vw solid #e0e0e0; float: left;}
