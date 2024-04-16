@@ -29,3 +29,5 @@
 .accordion_on .arrow_down{display: none;}
 .desc{word-break: keep-all;}
 .stroke{width: 100%; background: #f0f0f0; height: 0.2778vw;}
+.dot{position: relative;}
+.dot::before{position: absolute; display: block; content: '';  width: 1.1111vw; height: 1.1111vw; border-radius: 50%; top: 2.2222vw; left: 0px; background: #666;}
