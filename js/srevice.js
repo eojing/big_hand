@@ -1,22 +1,25 @@
 const tab = document.querySelectorAll('.tab div');
 const tab_content = document.querySelectorAll('section');
 const accordion = document.querySelectorAll('.accordion');
+const accordionPerant = document.querySelector('ul');
 
-accordion.forEach(function(i){
-    i.addEventListener('click',function(){
-        accordion.forEach(function(e){
-            e.classList.remove('accordion_on');
-        });
-        
-            if(i.classList.contains('accordion_on')){
-                i.classList.remove('accordion_on');
-            } else{
-                i.classList.add('accordion_on');
-            }
-        
+
+accordion.forEach(function(e){
+    e.addEventListener('click', function(e){
+        if(e.currentTarget.classList.contains('accordion_on')){
+            e.currentTarget.classList.remove('accordion_on');
+        }else{
+            accordion.forEach(function(e){
+                e.classList.remove('accordion_on');
+            });
+            e.currentTarget.classList.add('accordion_on');
+        }
     });
+})
 
-});
+
+
+
 
 
 

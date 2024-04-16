@@ -16,8 +16,8 @@
 .item_border{border: 0.2778vw solid #e0e0e0;}
 
 
-.QA{display: none; padding: 5.5556vw 4.4444vw; height: calc(100vh - 11.1111vw - 13.6111vw)}
-.bg{position: fixed; top: 24.7222vw; left: 0; width: 100%; height: 100vh; z-index: -1;}
+.QA{display: none; padding: 5.5556vw 4.4444vw; }
+.bg{position: absolute; top: 24.7222vw; left: 0; width: 100%; height: calc(100vh - 11.1111vw - 13.6111vw); z-index: -1;}
 .accordion{background: #fff; border-radius: 2.7778vw; padding: 5.5556vw 4.4444vw; max-height: 17.7778vw; overflow: hidden; transition: all 0.2s ease-in-out;}
 .two_line{max-height: 24.4444vw;}
 .accordion_on{display: block; max-height: 100vh;}
