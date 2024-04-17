@@ -3,6 +3,7 @@
 .close, .menu{position: absolute; max-width: 6.1111vw; width: 100%; right: 2.7778vw;}
 .back{position: absolute; max-width: 6.1111vw; width: 100%; left: 2.7778vw;}
 .scroll_wrap{
+    height: 9.1667vw;
     overflow: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -27,6 +28,24 @@
     background: transparent;  /* Optional: just make scrollbar invisible */
     -webkit-appearance: none;
     }
-.big_hand_group{width: 140.3vw;  padding: 0 4.4444vw;}
+.big_hand_group{width: 140.7vw; padding: 0 4.4444vw;}
 .big_hand_group::after{content: ''; display: block; clear: both;}
 .big_hand_name{display: inline-block; text-align: center; padding: 1.3889vw 3.6111vw; border-radius: 27.7778vw; border: 0.2778vw solid #e0e0e0; float: left;}
+.big_hand_name_on{background: #2c363b; border: none; color: #fff;}
+section{padding: 5.5556vw 0; background: #ebedf1;}
+.arrow{max-width: 4.4444vw; width: 100%;}
+.select{display: flex; align-items: center; margin-right: 5.5556vw;}
+.select div:first-child{margin-right: 1.6667vw;}
+.select_wrap{display: flex; padding: 0 4.44444vw; justify-content: space-between;}
+.select_gorup{display: flex;}
+.tooltip_img_wrap{max-width: 5.5556vw; width: 100%;}
+.item_wrap{padding: 0 4.4444vw;}
+.item{width: 100%; background: #fff; padding: 5.5556vw; border-radius: 3.7028vw;}
+
+
+.logo{max-width: 8.3333vw; width: 100%; margin-right: 2.2222vw;}
+.logo_name p{line-height: 4.0833vw;}
+.top{display: flex; align-items: center; justify-content: space-between;}
+.top > div{display: flex; align-items: center;}
+.tag{display: inline-block; padding: 0.5556vw 1.1111vw 1.1111vw; max-height: 5.5556vw;}
+.tag_red{color: #ff7d80; background: #fff8f9;}

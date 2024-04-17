@@ -18,16 +18,77 @@
         </header>
 
         <section>
-            <div class="scroll_wrap">
+            <div class="scroll_wrap mb20">
                 <ul class="big_hand_group">
-                    <li class="big_hand_name P-f14 c013 mr6">워랜 버핏</li>
+                    <li class="big_hand_name big_hand_name_on P-f14 c013 mr6">워랜 버핏</li>
                     <li class="big_hand_name P-f14 c013 mr6">빌 에크먼</li>
                     <li class="big_hand_name P-f14 c013 mr6">마이클 버리</li>
                     <li class="big_hand_name P-f14 c013 mr6">스탠리 드러캔밀러</li>
                     <li class="big_hand_name P-f14 c013">론 바론</li>    
                 </ul>
             </div>
+
+
+
+            <div class="select_wrap P-f14 fwm">
+                <div class="select_gorup">
+                    <div class="select select01 select_on">
+                        <div>24년 1분기</div>
+                        <div class="arrow">
+                            <img src="img/ndsw_icon_arrow05_d16.png" alt="">
+                        </div>
+                    </div>
+                    <div class="select select02 select_on">
+                        <div>매수</div>
+                        <div class="arrow">
+                            <img src="img/ndsw_icon_arrow05_d16.png" alt="">
+                        </div>
+                    </div>
+                    <div class="select select03 select_on">
+                        <div>전체</div>
+                        <div class="arrow">
+                            <img src="img/ndsw_icon_arrow05_d16.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tooltip_img_wrap">
+                    <img src="img/nds_icon_tooltip.png" alt="">
+                </div>
+            </div>
+
+            <div class="item_wrap">
+                <div class="item">
+                    <div class="top">
+                        <div>
+                            <div class="logo"><img src="img/logo_ci_01.png" alt=""></div>
+                            <div class="logo_name">
+                                <h4 class="P-f16 c004 fwb">애플</h4>
+                                <p class="P-f12 c024">AAPL</p>    
+                            </div>
+                        </div>
+                        <div class="tag P-f10 fwm tag_red">신규매수</div>
+                    </div>
+
+                </div>
+            </div>
+                
         </section>
     </div>
+
+
+    <script>
+        const bigHand = document.querySelectorAll('.big_hand_name');
+
+        bigHand.forEach(function(e){
+            e.addEventListener('click',function(e){
+                bigHand.forEach(function(e){
+                    e.classList.remove('big_hand_name_on');
+                });
+                e.currentTarget.classList.add('big_hand_name_on');
+            })
+        })
+
+    </script>
 </body>
 </html>
