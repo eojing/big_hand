@@ -1,9 +1,10 @@
-.header_name{display: flex; position: relative; height: 11.1111vw; justify-content: center; align-items: center;}
+img{display: block;}
+.header_name{display: flex; position: relative; height: 4rem; justify-content: center; align-items: center;}
 .header_name h1{margin: 0 auto;}
-.close, .menu{position: absolute; max-width: 6.1111vw; width: 100%; right: 2.7778vw;}
-.back{position: absolute; max-width: 6.1111vw; width: 100%; left: 2.7778vw;}
+.close, .menu{position: absolute; max-width: 2.2rem; width: 100%; height: 2.2rem; right: 1rem;}
+.back{position: absolute; max-width: 2.2rem; width: 100%; height: 2.2rem; left: 1rem;}
 .scroll_wrap{
-    height: 9.1667vw;
+    height: 3.3rem;
     overflow: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -28,24 +29,69 @@
     background: transparent;  /* Optional: just make scrollbar invisible */
     -webkit-appearance: none;
     }
-.big_hand_group{width: 140.7vw; padding: 0 4.4444vw;}
+.big_hand_group{width: 50.7rem; padding: 0 1.6rem;}
 .big_hand_group::after{content: ''; display: block; clear: both;}
-.big_hand_name{display: inline-block; text-align: center; padding: 1.3889vw 3.6111vw; border-radius: 27.7778vw; border: 0.2778vw solid #e0e0e0; float: left;}
+.big_hand_name{display: inline-block; text-align: center; padding: 0.5rem 1.3rem; border-radius: 10rem; border: 0.1rem solid #e0e0e0; float: left;}
 .big_hand_name_on{background: #2c363b; border: none; color: #fff;}
-section{padding: 5.5556vw 0; background: #ebedf1;}
-.arrow{max-width: 4.4444vw; width: 100%;}
-.select{display: flex; align-items: center; margin-right: 5.5556vw;}
-.select div:first-child{margin-right: 1.6667vw;}
-.select_wrap{display: flex; padding: 0 4.44444vw; justify-content: space-between;}
+section{padding: 2rem 0; background: #ebedf1; position: relative;}
+.arrow{max-width: 1.6rem; width: 100%; height: 1.6rem;}
+.select{display: flex; align-items: center; margin-right: 2rem;}
+.select div:first-child{margin-right: 0.6rem;}
+.select_wrap{display: flex; padding: 0 1.6rem; justify-content: space-between;}
 .select_gorup{display: flex;}
-.tooltip_img_wrap{max-width: 5.5556vw; width: 100%;}
-.item_wrap{padding: 0 4.4444vw;}
-.item{width: 100%; background: #fff; padding: 5.5556vw; border-radius: 3.7028vw;}
+.tooltip_img_wrap{max-width: 2rem; width: 100%; height: 2rem;}
+.item_wrap{padding: 0 1.6rem 5.9rem;}
+.item{width: 100%; background: #fff; padding: 2rem; border-radius: 1.3rem;}
+.not{background: none; padding-top: 6rem; display: none;}
+.not p{text-align: center;}
+.not .icon{max-width: 2rem; width: 100%; height: 2rem; margin: 0 auto; margin-bottom: 1.6rem;}
+.item:last-child{margin-bottom: 0 !important;}
 
 
-.logo{max-width: 8.3333vw; width: 100%; margin-right: 2.2222vw;}
-.logo_name p{line-height: 4.0833vw;}
+.logo{max-width: 3rem; width: 100%; height: 3rem; margin-right: 0.8rem;}
+.logo_name p{line-height: 1.5rem;}
 .top{display: flex; align-items: center; justify-content: space-between;}
 .top > div{display: flex; align-items: center;}
-.tag{display: inline-block; padding: 0.5556vw 1.1111vw 1.1111vw; max-height: 5.5556vw;}
+.tag{display: inline-block; padding: 0.2rem 0.4rem 0.4rem; max-height: 2rem; background: #f9f9f9; color: #999;}
 .tag_red{color: #ff7d80; background: #fff8f9;}
+.tag_blue{color: #6fadff; background: #f4f9ff;}
+.tag_green{color: #84c13d; background: #f0fae5;}
+
+.flex_wrap{display: flex;justify-content: space-between;}
+.flex{display: flex;justify-content: space-between;max-width: 13.4rem; width: 100%;}
+p.text{max-width: 5.6rem; width: 100%;}
+p.num{max-width: 7.4rem; width: 100%;}
+
+.num.blue{color: #247ef2;}
+
+
+.popup_btn{display: flex; position: fixed; align-items: center; justify-content: space-between; bottom: 0; left: 0; z-index: 100; height: 3.4rem; width: 100%; background: #f9f9f9; padding: 1rem 1.6rem;}
+.popup_arrow{max-width: 1.6rem; width: 100%; height: 1.6rem;}
+.popup_icon{max-width: 1.4rem; width: 100%; height: 1.4rem; margin-right: 0.4rem;}
+.flex_left{display: flex; align-items: center;}
+
+.bg{background: #ebedf1; width: 100%; height: calc(100vh - 4rem); position: absolute; top: 0; left: 0; z-index: -1;}
+
+
+.popup_wrap{
+    position: fixed;
+    width: 100%;
+    top: 200%;
+    left: 0;
+    z-index: 100;
+    padding: 2.6rem 0;
+}
+.popup_header{
+    padding-bottom: 2rem;
+}
+.close_btn{max-width: 2rem; width: 100%; position: absolute; top: 2.8rem; right: 2rem;}
+
+.option{padding: 1.6rem 2rem;}
+.option_select{font-weight: 700; background: #f7f9f3;}
+
+
+.popup_stroke{margin: 0 2rem;}
+
+.popup_wrap_on{top: 100%;}
+
+.scroll_lock{touch-action: none;}

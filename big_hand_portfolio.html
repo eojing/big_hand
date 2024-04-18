@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mcom.css">
     <link rel="stylesheet" href="css/big_hand_portfolio.css">
 </head>
 <body>
@@ -18,6 +18,7 @@
         </header>
 
         <section>
+            <div class="bg"></div>
             <div class="scroll_wrap mb20">
                 <ul class="big_hand_group">
                     <li class="big_hand_name big_hand_name_on P-f14 c013 mr6">워랜 버핏</li>
@@ -30,22 +31,22 @@
 
 
 
-            <div class="select_wrap P-f14 fwm">
+            <div class="select_wrap P-f14 fwm mb6">
                 <div class="select_gorup">
                     <div class="select select01 select_on">
-                        <div>24년 1분기</div>
+                        <div class="P-f14 c013">24년 1분기</div>
                         <div class="arrow">
                             <img src="img/ndsw_icon_arrow05_d16.png" alt="">
                         </div>
                     </div>
                     <div class="select select02 select_on">
-                        <div>매수</div>
+                        <div class="P-f14 c013">매수</div>
                         <div class="arrow">
                             <img src="img/ndsw_icon_arrow05_d16.png" alt="">
                         </div>
                     </div>
                     <div class="select select03 select_on">
-                        <div>전체</div>
+                        <div class="P-f14 c013">전체</div>
                         <div class="arrow">
                             <img src="img/ndsw_icon_arrow05_d16.png" alt="">
                         </div>
@@ -58,8 +59,20 @@
             </div>
 
             <div class="item_wrap">
-                <div class="item">
-                    <div class="top">
+
+
+                <!-- 조회 가능 데이터 없을때 -->
+                <div class="not mt60">
+                    <div class="icon">
+                        <img src="img/nds_icon_info05_h30.png" alt="">
+                    </div>
+                    <p class="P-f14 c023">조회 가능한 데이터가 없습니다.</p>
+                </div>
+                <!-- //조회 가능 데이터 없을때 -->
+
+
+                <div class="item mb10">
+                    <div class="top mb20">
                         <div>
                             <div class="logo"><img src="img/logo_ci_01.png" alt=""></div>
                             <div class="logo_name">
@@ -67,12 +80,285 @@
                                 <p class="P-f12 c024">AAPL</p>    
                             </div>
                         </div>
-                        <div class="tag P-f10 fwm tag_red">신규매수</div>
+                        <div>
+                            <div class="tag P-f10 fwm tag_red">신규매수</div>
+                        </div>
                     </div>
+                    <div class="bottom">
+                        <div class="flex_wrap mb6">
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">포트 비중</p>
+                                <p class="num P-f12 fwm c062 ar">50.51%</p>
+                            </div>
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">전분기 비중 </p>
+                                <p class="num P-f12 fwm c062 ar">0.00%</p>
+                            </div>
+                        </div>
 
+                        <div class="flex_wrap">
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">보유주식수</p>
+                                <p class="num P-f12 fwm c062 ar">91,556</p>
+                            </div>
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">주식 증감율</p>
+                                <p class="num P-f12 fwm c062 ar">-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item mb10">
+                    <div class="top mb20">
+                        <div>
+                            <div class="logo"><img src="img/logo_ci_02.png" alt=""></div>
+                            <div class="logo_name">
+                                <h4 class="P-f16 c004 fwb">엔비디아</h4>
+                                <p class="P-f12 c024">NVDA</p>    
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tag P-f10 fwm tag_green mr4">12개월 보유</div>
+                            <div class="tag P-f10 fwm tag_red">추가매수</div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex_wrap mb6">
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">포트 비중</p>
+                                <p class="num P-f12 fwm c062 ar">50.51%</p>
+                            </div>
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">전분기 비중 </p>
+                                <p class="num P-f12 fwm c062 ar">0.00%</p>
+                            </div>
+                        </div>
+
+                        <div class="flex_wrap">
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">보유주식수</p>
+                                <p class="num P-f12 fwm c062 ar">91,556</p>
+                            </div>
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">주식 증감율</p>
+                                <p class="num blue P-f12 fwm c062 ar">-6.43%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item mb10">
+                    <div class="top mb20">
+                        <div>
+                            <div class="logo"><img src="img/logo_ci_03.png" alt=""></div>
+                            <div class="logo_name">
+                                <h4 class="P-f16 c004 fwb">스타벅스</h4>
+                                <p class="P-f12 c024">SBUX</p>    
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tag P-f10 fwm tag_green mr4">112개월 보유</div>
+                            <div class="tag P-f10 fwm tag_blue">전량매도</div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex_wrap mb6">
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">포트 비중</p>
+                                <p class="num P-f12 fwm c062 ar">50.51%</p>
+                            </div>
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">전분기 비중 </p>
+                                <p class="num P-f12 fwm c062 ar">0.00%</p>
+                            </div>
+                        </div>
+
+                        <div class="flex_wrap">
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">보유주식수</p>
+                                <p class="num P-f12 fwm c062 ar">91,556</p>
+                            </div>
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">주식 증감율</p>
+                                <p class="num P-f12 fwm c062 ar">-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item mb10">
+                    <div class="top mb20">
+                        <div>
+                            <div class="logo"><img src="img/logo_ci_03.png" alt=""></div>
+                            <div class="logo_name">
+                                <h4 class="P-f16 c004 fwb">스타벅스</h4>
+                                <p class="P-f12 c024">SBUX</p>    
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tag P-f10 fwm tag_green mr4">112개월 보유</div>
+                            <div class="tag P-f10 fwm tag_blue">부분매도</div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex_wrap mb6">
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">포트 비중</p>
+                                <p class="num P-f12 fwm c062 ar">50.51%</p>
+                            </div>
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">전분기 비중 </p>
+                                <p class="num P-f12 fwm c062 ar">0.00%</p>
+                            </div>
+                        </div>
+
+                        <div class="flex_wrap">
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">보유주식수</p>
+                                <p class="num P-f12 fwm c062 ar">91,556</p>
+                            </div>
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">주식 증감율</p>
+                                <p class="num blue P-f12 fwm c062 ar">-6.43%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="top mb20">
+                        <div>
+                            <div class="logo"><img src="img/logo_ci_04.png" alt=""></div>
+                            <div class="logo_name">
+                                <h4 class="P-f10 c004 fwb">VanEck Semiconducor UCIT</h4>
+                                <p class="P-f12 c024">SMX</p>    
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tag P-f10 fwm tag_green mr4">112개월 보유</div>
+                            <div class="tag P-f10 fwm">수량유지</div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex_wrap mb6">
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">포트 비중</p>
+                                <p class="num P-f12 fwm c062 ar">50.51%</p>
+                            </div>
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">전분기 비중 </p>
+                                <p class="num P-f12 fwm c062 ar">0.00%</p>
+                            </div>
+                        </div>
+
+                        <div class="flex_wrap">
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">보유주식수</p>
+                                <p class="num P-f12 fwm c062 ar">91,556</p>
+                            </div>
+                            <div class="flex">
+                                <p class="text P-f12 fwm c062 mr4">주식 증감율</p>
+                                <p class="num P-f12 fwm c062 ar">-</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-                
+
+
+            <div class="popup_btn">
+                <div class="flex_left">
+                    <div class="popup_icon"><img src="img/ndsw_icon_info03_h14.png" alt=""></div>
+                    <p class="P-f12 c013">유의사항</p>
+                </div>
+                <div>
+                    <div class="popup_arrow"><img src="img/ndsw_icon_arrow05_r16.png" alt=""></div>
+                </div>
+            </div>
+
+
+            <div class="popup_back"></div>
+
+
+
+
+            <!-- 분기 팝업 -->
+            <div class="popup_wrap al">
+                <div class="popup_text">
+                    <h3 class="popup_header P-f17 ac fwm c023">큰손의 포트폴리오</h3>
+                    <div class="close_btn"><img src="img/nds_icon_close.png" alt=""></div>
+                    <div class="popup_stroke bdc017"></div>
+                     <div>
+                        <div class="popup_content">
+                            <div class="option option1 P-f14 fwm option_select">24년 1분기</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option2 P-f14 fwm">23년 4분기</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option3 P-f14 fwm">23년 3분기</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option4 P-f14 fwm">23년 2분기</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option5 P-f14 fwm">23년 1분기</div>
+                            <div class="popup_stroke bdc025"></div>
+                        </div>
+                       </div>
+                </div>
+            </div>
+            <!-- //분기 팝업 -->
+
+
+
+
+            <!-- 매수, 매도, 유지 팝업 -->
+            <div class="popup_wrap al">
+                <div class="popup_text">
+                    <h3 class="popup_header P-f17 ac fwm c023">큰손의 포트폴리오</h3>
+                    <div class="close_btn"><img src="img/nds_icon_close.png" alt=""></div>
+                    <div class="popup_stroke bdc017"></div>
+                     <div>
+                        <div class="popup_content">
+                            <div class="option option1 P-f14 fwm option_select">전체</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option2 P-f14 fwm">매수</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option3 P-f14 fwm">매도</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option4 P-f14 fwm">유지</div>
+                            <div class="popup_stroke bdc025"></div>
+                        </div>
+                       </div>
+                </div>
+            </div>
+            <!-- //매수, 매도, 유지 팝업 -->
+
+
+            <!-- 전체, 신규, 추가, 부분, 전량 팝업 -->
+            <div class="popup_wrap al">
+                <div class="popup_text">
+                    <h3 class="popup_header P-f17 ac fwm c023">큰손의 포트폴리오</h3>
+                    <div class="close_btn"><img src="img/nds_icon_close.png" alt=""></div>
+                    <div class="popup_stroke bdc017"></div>
+                        <div>
+                        <div class="popup_content">
+                            <div class="option option1 P-f14 fwm option_select">전체</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option2 P-f14 fwm">신규매수</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option3 P-f14 fwm">추가매수</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option4 P-f14 fwm">부분매도</div>
+                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option5 P-f14 fwm">전량매도</div>
+                            <div class="popup_stroke bdc025"></div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <!-- //전체, 신규, 추가, 부분, 전량 팝업 -->
+
         </section>
     </div>
 
@@ -88,6 +374,50 @@
                 e.currentTarget.classList.add('big_hand_name_on');
             })
         })
+
+
+        const item = document.querySelectorAll('.item');
+        const item_not = document.querySelector('.not');
+
+
+            if(item.length == 0){
+                item_not.style.display = 'block';
+            }
+
+        const popup = document.querySelectorAll('.popup_wrap');
+        const select = document.querySelectorAll('.select');
+        const popup_wrap = document.querySelectorAll('.popup_wrap');
+        const close_btn = document.querySelectorAll('.close_btn');
+        const blackBg = document.querySelector('.popup_back');
+
+
+        select[0].addEventListener('click',function(){
+            blackBg.classList.add('popup_back_on');
+            popup[0].classList.add('popup_wrap_on');
+            const option = popup_wrap[0].querySelectorAll('.option');
+
+            option.forEach(function(e){
+
+                e.addEventListener('click',function(){
+                    option.forEach(function(e){
+                        e.classList.remove('option_select');
+                    });
+                    this.classList.add('option_select');
+                    select[0].querySelector('div').innerHTML = this.innerHTML;
+                });
+
+            });
+
+        });
+
+
+
+
+
+
+
+
+
 
     </script>
 </body>
