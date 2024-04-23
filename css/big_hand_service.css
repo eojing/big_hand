@@ -16,8 +16,9 @@
 
 .bottom_wrap{padding: 5rem 1.6rem;}
 .tag_tit{margin-bottom: 1.4rem;}
-.item{ border-radius: 1.3rem; padding: 2.4rem 1.6rem;}
-.content_flex{display: flex;}
+.top_item{max-width: 16rem; width: 100%;}
+.item{border-radius: 1.3rem; padding: 2.4rem 1.6rem;}
+.content_flex{display: flex; justify-content: space-between;}
 .emoji{max-width: 2.4rem; width: 100%;}
 .item_border{border: 0.1rem solid #e0e0e0;}
 
