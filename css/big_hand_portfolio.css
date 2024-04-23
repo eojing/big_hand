@@ -41,7 +41,7 @@ header{position: sticky; top: 0; background: #fff; z-index: 10;}
 .big_hand_group{width: 50.7rem; padding: 0 1.6rem;}
 .big_hand_group::after{content: ''; display: block; clear: both;}
 .big_hand_name{display: inline-block; text-align: center; padding: 0.5rem 1.3rem; border-radius: 10rem; border: 0.1rem solid #e0e0e0; float: left; background: #fff;}
-.big_hand_name_on{background: #2c363b; border: none; color: #fff;}
+.big_hand_name_on{background: #2c363b; border: 0.1rem solid #2c363b; color: #fff;}
 section{padding: 2rem 0; background: #ebedf1; position: relative;}
 .arrow{max-width: 1.6rem; width: 100%; height: 1.6rem;}
 .select{display: none; align-items: center; margin-right: 2rem;}
@@ -69,7 +69,7 @@ section{padding: 2rem 0; background: #ebedf1; position: relative;}
 .tag_green{color: #84c13d; background: #f0fae5; padding-right: 0.5rem;}
 
 .flex_wrap{display: flex;justify-content: space-between;}
-.flex{display: flex;justify-content: space-between;max-width: 13.4rem; width: 100%;}
+.flex{display: flex;justify-content: space-between;max-width: 13.4rem; width: 100%; align-items: center;}
 p.text{max-width: 5.6rem; width: 100%;}
 p.num{max-width: 7.4rem; width: 100%;}
 
