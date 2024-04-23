@@ -29,7 +29,7 @@
 .QA{display: none; padding: 2rem 1.6rem; }
 .bg{position: absolute; top: 8.9rem; left: 0; width: 100%; height: calc(100vh - 4rem - 4.9rem); z-index: -1;}
 .accordion{background: #fff; border-radius: 1rem; padding: 2rem 1.6rem; max-height: 6.4rem; overflow: hidden; transition: all 0.2s ease-in-out;}
-.two_line{max-height: 8.8rem;}
+.two_line{max-height: 8.7rem;}
 .accordion_on{display: block; max-height: 100vh;}
 .accordion_tit_wrap{display: flex; align-items: center; justify-content: space-between;}
 .arrow{max-width: 1.6rem;}
