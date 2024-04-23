@@ -92,7 +92,7 @@ p.num{max-width: 7.4rem; width: 100%;}
 .option_select{font-weight: 700; background: #f9fdf3;}
 
 
-.popup_stroke{margin: 0 2rem;}
+.popup_stroke{margin: 0 2rem; background: #F0F0F0;}
 .popup_header_stroke{background: #e0e0e0;}
 
 .popup_wrap_on{top: 100%;}
@@ -105,7 +105,7 @@ p.num{max-width: 7.4rem; width: 100%;}
 .dn{display: none;}
 .db{display: block;}
 
-.tooltip_wrap{position: absolute; visibility: hidden; transition: all 0.2s ease-in-out; opacity: 0; pointer-events: none; top: 10rem; right: 0.8rem; width: 29rem; height: 33.6rem; padding: 1.6rem; border: 0.1rem solid #84c13d; background: #f9fdf4; border-radius: 0.6rem;}
+.tooltip_wrap{position: absolute; visibility: hidden; transition: all 0.2s ease-in-out; opacity: 0; pointer-events: none; top: 10.1rem; right: 0.8rem; width: 29rem; height: 33.6rem; padding: 1.6rem; border: 0.1rem solid #84c13d; background: #f9fdf4; border-radius: 0.6rem;}
 .tooltip_wrap_on{visibility: visible; opacity: 1; pointer-events: all;}
 
 
