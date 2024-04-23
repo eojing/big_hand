@@ -41,4 +41,4 @@
 .desc{word-break: keep-all;}
 .stroke{width: 100%; background: #f0f0f0; height: 0.1rem; margin-top: 2.1rem;}
 .dot{position: relative;}
-.dot::before{position: absolute; display: block; content: '';  width: 0.4rem; height: 0.4rem; border-radius: 50%; top: 0.8rem; left: 0px; background: #666;}
+.dot::before{position: absolute; display: block; content: '';  width: 0.2rem; height: 0.2rem; border-radius: 50%; top: 0.8rem; left: 0px; background: #666;}
