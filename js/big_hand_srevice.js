@@ -37,3 +37,9 @@ tab[1].addEventListener('click',function(){
     tab_content[0].style.display = 'none';
     tab_content[1].style.display = 'block';
 });
+
+
+
+
+
+

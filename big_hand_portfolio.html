@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/mcom.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/big_hand_portfolio.css">
 </head>
 <body>
@@ -16,6 +16,13 @@
                 <div class="menu"><img src="img/nds_icon_header_menu.png" alt=""></div>
             </div>
         </header>
+
+        <div class="top_menu_select_wrap">
+            <div class="top_menu">
+                <div class="P-f14 fwm c004">해외주식 주문내역</div>
+                <div class="P-f14 fwm c004">소수점 주문내역</div>
+            </div>
+        </div>
 
         <section>
             <div class="bg"></div>
@@ -40,12 +47,12 @@
                         </div>
                     </div>
                     <div class="select select02 select_on">
-                        <div class="P-f14 c013">매수</div>
+                        <div class="P-f14 c013">전체</div>
                         <div class="arrow">
                             <img src="img/ndsw_icon_arrow05_d16.png" alt="">
                         </div>
                     </div>
-                    <div class="select select03 select_on">
+                    <div class="select select03">
                         <div class="P-f14 c013">전체</div>
                         <div class="arrow">
                             <img src="img/ndsw_icon_arrow05_d16.png" alt="">
@@ -56,6 +63,22 @@
                 <div class="tooltip_img_wrap">
                     <img src="img/nds_icon_tooltip.png" alt="">
                 </div>
+
+
+                <div class="op_back"></div>
+
+                <div class="tooltip_wrap">
+                    <h4 class="P-f14 c004 fwb mb6">기준 제공 안내</h4>
+                    <p class="P-f12 c013 fwm mb6">큰손의 포트폴리오는 SEC의 13F 공시를 통해 공개되는 매 분기 말 데이터 기준으로 제공됩니다.</p>
+                    <div class="dot P-f12 c023 mb6">포트 비중 : 해당 분기 전체 포트폴리오에서 해당 종목이 차지하는 비중입니다.</div>
+                    <div class="dot P-f12 c023 mb6">전분기 비중 : 이전 분기 포트폴리오 내에서 해당 종목이 차지하는 비중입니다.</div>
+                    <div class="dot P-f12 c023 mb6">보유주식수 : 해당 분기 해당 종목 보유 주수입니다.</div>
+                    <div class="dot P-f12 c023 mb6">주식수 증감율 : 이전 분기 대비 해당 분기의 해당 종목 주식수 증감율 입니다.</div>
+                    <div class="dot P-f12 c023 mb6">신규매수 : 해당 분기 신규 매수 종목입니다.</div>
+                    <div class="dot P-f12 c023 mb6">전량매도 : 해당 분기 전량 매도 종목입니다.</div>
+                    <div class="dot P-f12 c023">보유 기간 : 최초 매수 분기로부터 공시 분기의 마지막 분기까지의 기간 차이를 계산한 예상 수치입니다.</div>
+                </div>
+
             </div>
 
             <div class="item_wrap">
@@ -71,7 +94,7 @@
                 <!-- //조회 가능 데이터 없을때 -->
 
 
-                <div class="item mb10">
+                <div class="item item_on mb10 buy new_buy">
                     <div class="top mb20">
                         <div>
                             <div class="logo"><img src="img/logo_ci_01.png" alt=""></div>
@@ -110,7 +133,7 @@
                 </div>
 
 
-                <div class="item mb10">
+                <div class="item item_on mb10 buy add_buy">
                     <div class="top mb20">
                         <div>
                             <div class="logo"><img src="img/logo_ci_02.png" alt=""></div>
@@ -150,7 +173,7 @@
                 </div>
 
 
-                <div class="item mb10">
+                <div class="item item_on mb10 sell full_sell">
                     <div class="top mb20">
                         <div>
                             <div class="logo"><img src="img/logo_ci_03.png" alt=""></div>
@@ -189,7 +212,7 @@
                     </div>
                 </div>
 
-                <div class="item mb10">
+                <div class="item item_on mb10 sell part_sell">
                     <div class="top mb20">
                         <div>
                             <div class="logo"><img src="img/logo_ci_03.png" alt=""></div>
@@ -228,8 +251,8 @@
                     </div>
                 </div>
 
-                <div class="item">
-                    <div class="top mb20">
+                <div class="item item_on">
+                    <div class="top mb20 keep">
                         <div>
                             <div class="logo"><img src="img/logo_ci_04.png" alt=""></div>
                             <div class="logo_name">
@@ -345,80 +368,124 @@
                         <div class="popup_content">
                             <div class="option option1 P-f14 fwm option_select">전체</div>
                             <div class="popup_stroke bdc025"></div>
-                            <div class="option option2 P-f14 fwm">신규매수</div>
-                            <div class="popup_stroke bdc025"></div>
-                            <div class="option option3 P-f14 fwm">추가매수</div>
-                            <div class="popup_stroke bdc025"></div>
-                            <div class="option option4 P-f14 fwm">부분매도</div>
-                            <div class="popup_stroke bdc025"></div>
-                            <div class="option option5 P-f14 fwm">전량매도</div>
-                            <div class="popup_stroke bdc025"></div>
+                            <div class="option option2 P-f14 fwm buy_option">신규매수</div>
+                            <div class="popup_stroke bdc025 buy_option"></div>
+                            <div class="option option3 P-f14 fwm buy_option">추가매수</div>
+                            <div class="popup_stroke bdc025 buy_option"></div>
+                            <div class="option option4 P-f14 fwm sell_option">부분매도</div>
+                            <div class="popup_stroke bdc025 sell_option"></div>
+                            <div class="option option5 P-f14 fwm sell_option">전량매도</div>
+                            <div class="popup_stroke bdc025 sell_option"></div>
                         </div>
                         </div>
                 </div>
             </div>
             <!-- //전체, 신규, 추가, 부분, 전량 팝업 -->
 
+            <div class="right_popup_wrap">
+                <div class="btn_wrap">
+                    <div class="icon right_popup_close"><img src="img/nds_icon_close_2.png" alt=""></div>
+                    <div>
+                        <div class="icon icon_option"><img src="img/nds_icon_interest.png" alt=""></div>
+                        <div class="icon delete"><img src="img/nds_icon_delete.png" alt=""></div>
+                        <div class="icon memo"><img src="img/ms_btn_memo.png" alt=""></div>
+                        <div class="icon fav"><img src="img/ms_btn_fav.png" alt=""></div>
+                    </div>
+                </div>
+                <h3 class="P-f17 c004 fwb mb8">애플</h3>
+                <div class="tag_wrap mb8">
+                    <div class="right_popup_tag P-f10 c013">데이</div>
+                        <div class="P-f12 line c013">AAPL</div>
+                        <div class="P-f12 line c013">미국</div>
+                        <div class="P-f12 line c013">무료실시간</div>
+                        <div class="P-f12 line c013">증100</div>
+                </div>
+                <div class="flex">
+                    <div class="blue fwm P-f26">92,300</div>
+                    <div class="right_popup_tag white_tag P-f10 c013">현재가</div>
+                </div>
+                <p class="blue P-f12 mb9">₩ 44,979</p>
+
+                <div class="flex jl">
+                    <p class="P-f12 c013">
+                        <span class="P-f16 fwm down blue">700</span>
+                        <br>
+                        289,925
+                    </p>
+                    <p class="P-f12 c013">
+                        <span class="P-f16 fwm blue">0.75%</span>
+                        <br>
+                        11.86%
+                    </p>
+                </div>
+                
+                <div class="flex">
+                    <p class="P-f12 green">시가</p>
+                    <p class="P-f12 blue">92,000</p>
+                    <p class="P-f12 blue">-0.11%</p>
+                </div>
+
+                <div class="flex">
+                    <p class="P-f12 red">고가</p>
+                    <p class="P-f12 green">93,000</p>
+                    <p class="P-f12 green">0.00%</p>
+                </div>
+
+                <div class="flex">
+                    <p class="P-f12 blue">저가</p>
+                    <p class="P-f12 blue">92,100</p>
+                    <p class="P-f12 blue">-0.97%</p>
+                </div>
+
+                <div class="chart_wrap">
+                    <div class="flex">
+                        <h3 class="P-f14 fwb c004">차트</h3>
+                        <div class="right_popup_tag white_tag P-f10 c013">차트보기</div>
+                    </div>
+                    <div class="chart">
+                        <img src="img/chart_img.png" alt="">
+                    </div>
+                    <div class="right_popup_tag white_tag chart_tag P-f10 c013">해외주식 소수점 주문하기</div>
+                </div>
+
+                <div class="botton_btn_wrap">
+                    <div class="botton_btn buy_btn P-f17 c063">매수</div>
+                    <div class="botton_btn sell_btn P-f17 c063">매도</div>
+                </div>
+                
+
+            </div>
         </section>
+
+        <div class="notice">
+            <div class="header_name">
+                <h1 class="P-f16 fwm">유의사항</h1>
+                <div class="notice_close"><img src="img/nds_icon_close_2.png" alt=""></div>
+            </div>
+            <div class="text">
+                <div class="dot_c013 P-f13 fwb mb6 c013">NH투자증권 준법감시인 심사필 제 2024-0000호 (2024-00-00 ~ 2025-00-00)</div>
+                <div class="dot P-f13 fwm mb6 c013">
+                    상기 서비스에서 보여드리는 종목은 특정 기관 투자자의 SEC Form 13F 공시 데이터 기반으로 제공됩니다. </div>
+                <div class="dot P-f13 fwm mb6 c013">
+                    본 서비스에서 제시된 주식 등 금융투자상품 관련 내용은 당사 또는 제휴사에서 신뢰할만한 자료 및 정보를 바탕으로 최선을 다해 분석한 결과이나, 그 정확성이나 완전성을 보장할 수 없습니다. 따라서 어떠한 경우에도 주식 등 금융투자상품 투자의 결과에 대한 법적 책임소재를 판단하기 위한 증빙 자료로 사용될 수 없습니다.</div>
+                <div class="dot P-f13 fwm mb6 c013">외화자산의 경우 환율 변동에 따라 손실이 발생할 수 있습니다.</div>
+                <div class="dot P-f13 fwm mb6 c013">
+                    해외주식 매매 시, 수수료 0.25%(미국, 온라인 기준, 국가별 상이) 및 제비용 발생 (미국주식 매도 시 SEC Fee(0.0008%), 국가별 상이), 기타 수수료/제비용에 대한 상세 내용은 홈페이지 등을 참고하시기 바랍니다.</div>
+                <div class="dot P-f13 fwm mb6 c013">
+                    투자자는 금융투자상품에 대하여 금융회사로부터 충분한 설명을 받을 권리가 있으며, 투자 전 상품설명서 및 약관 등을 반드시 읽어보시기 바랍니다.</div>
+                <div class="dot P-f13 fwm mb6 c013">
+                    이 금융상품(주식)은 예금자보호법에 따라 보호되지 않습니다.</div>
+                <div class="dot P-f13 fwm mb6 c013">
+                    주식은 자산가격 변동, 환율변동, 신용등급 하락 등에 따라 투자 원금의 손실(0~100%)이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</div>
+            </div>
+        </div>
+
+
+
     </div>
 
 
-    <script>
-        const bigHand = document.querySelectorAll('.big_hand_name');
-
-        bigHand.forEach(function(e){
-            e.addEventListener('click',function(e){
-                bigHand.forEach(function(e){
-                    e.classList.remove('big_hand_name_on');
-                });
-                e.currentTarget.classList.add('big_hand_name_on');
-            })
-        })
-
-
-        const item = document.querySelectorAll('.item');
-        const item_not = document.querySelector('.not');
-
-
-            if(item.length == 0){
-                item_not.style.display = 'block';
-            }
-
-        const popup = document.querySelectorAll('.popup_wrap');
-        const select = document.querySelectorAll('.select');
-        const popup_wrap = document.querySelectorAll('.popup_wrap');
-        const close_btn = document.querySelectorAll('.close_btn');
-        const blackBg = document.querySelector('.popup_back');
-
-
-        select[0].addEventListener('click',function(){
-            blackBg.classList.add('popup_back_on');
-            popup[0].classList.add('popup_wrap_on');
-            const option = popup_wrap[0].querySelectorAll('.option');
-
-            option.forEach(function(e){
-
-                e.addEventListener('click',function(){
-                    option.forEach(function(e){
-                        e.classList.remove('option_select');
-                    });
-                    this.classList.add('option_select');
-                    select[0].querySelector('div').innerHTML = this.innerHTML;
-                });
-
-            });
-
-        });
-
-
-
-
-
-
-
-
-
-
-    </script>
+  
+    <script src="js/big_hand_portfolio.js"></script>
 </body>
 </html>
