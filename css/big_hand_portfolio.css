@@ -5,7 +5,7 @@ header{position: sticky; top: 0; background: #fff; z-index: 10;}
 .top_menu_select_wrap{position: fixed; max-width: 17.8rem; width: 100%;  top: 5rem; right: 1.6rem; background: #fff; border-radius: 1rem; z-index: 1000; visibility: hidden; opacity: 0; transition: 0.2s all ease-in-out;}
 .top_menu_select_wrap_on{visibility: visible; opacity: 1;}
 .top_menu div{padding: 1.4rem 1.6rem;}
-.top_menu div:active{background: #f7f9f3;}
+.top_menu div:active{background: #f9fdf3;}
 .top_menu div:first-child{border-bottom: 0.1rem solid #f0f0f0; border-top-left-radius: 1rem; border-top-right-radius: 1rem;}
 .top_menu div:last-child{border-bottom: 0.1rem solid #f0f0f0; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;}
 
@@ -89,10 +89,11 @@ p.num{max-width: 7.4rem; width: 100%;}
 .close_btn{max-width: 2rem; width: 100%; position: absolute; top: 2.8rem; right: 2rem;}
 
 .option{padding: 1.6rem 2rem;}
-.option_select{font-weight: 700; background: #f7f9f3;}
+.option_select{font-weight: 700; background: #f9fdf3;}
 
 
 .popup_stroke{margin: 0 2rem;}
+.popup_header_stroke{background: #e0e0e0;}
 
 .popup_wrap_on{top: 100%;}
 
@@ -104,33 +105,18 @@ p.num{max-width: 7.4rem; width: 100%;}
 .dn{display: none;}
 .db{display: block;}
 
-.tooltip_wrap{position: absolute; visibility: hidden; transition: all 0.2s ease-in-out; opacity: 0; pointer-events: none; top: 11rem; right: 0.8rem; width: 29rem; height: 33.6rem; padding: 1.6rem; border: 0.1rem solid #84c13d; background: #f9fdf4; border-radius: 0.6rem;}
+.tooltip_wrap{position: absolute; visibility: hidden; transition: all 0.2s ease-in-out; opacity: 0; pointer-events: none; top: 10rem; right: 0.8rem; width: 29rem; height: 33.6rem; padding: 1.6rem; border: 0.1rem solid #84c13d; background: #f9fdf4; border-radius: 0.6rem;}
 .tooltip_wrap_on{visibility: visible; opacity: 1; pointer-events: all;}
-.tooltip_wrap::after{
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 0.9rem solid transparent;
-    border-right: 0.9rem solid transparent;
-    border-bottom: 0.8rem solid #f9fdf4;
+
+
+.tooltip_img{
+    width: 1.6rem;
+    height: 0.8rem;
     position: absolute;
-    top: -0.6rem;
-    z-index: 0;
-    right: 10px;
-    
+    top: -0.7rem;
+    right: 0.9rem;
 }
-.tooltip_wrap::before{
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 1rem solid transparent;
-    border-right: 1rem solid transparent;
-    border-bottom: 0.85rem solid #84c13d;
-    position: absolute;
-    top: -0.8rem;
-    z-index: 0;
-    right: 9px;
-}
+
 .tooltip_wrap .dot{position: relative; padding-left: 0.8rem;}
 .tooltip_wrap .dot::before{content: ''; display: block; position: absolute; background: #333; width: 0.2rem; height: 0.2rem; border-radius: 50%; top: 0.7rem; left: 0.2rem;}
 .op_back{display: none; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; background: #fff; opacity: 0;z-index: 10;}
@@ -180,4 +166,4 @@ p.num{max-width: 7.4rem; width: 100%;}
 .dot_c013{color: #333;}
 
 
-.popup_back_on{touch-action: none;}
+.popup_back_on{touch-action: none; z-index: 100;}
