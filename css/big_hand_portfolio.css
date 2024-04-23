@@ -144,7 +144,7 @@ p.num{max-width: 7.4rem; width: 100%;}
 .chart_wrap .flex{margin-bottom: 0.667rem;}
 .chart{margin-bottom: 1.7rem;}
 .chart_tag{border-radius: 0.6rem;}
-.botton_btn_wrap{position: absolute; bottom: 3.378rem; display: flex; width: 100%; left: 0;}
+.botton_btn_wrap{position: absolute; bottom: 0; display: flex; width: 100%; left: 0;}
 .botton_btn{padding: 1.2rem 1.33rem; width: 50%; text-align: center;}
 .buy_btn{background: #EF2D26;}
 .sell_btn{background: #277fff;}
