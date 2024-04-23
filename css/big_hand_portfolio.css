@@ -76,7 +76,7 @@ p.num{max-width: 7.4rem; width: 100%;}
 .num.blue{color: #247ef2;}
 
 
-.popup_btn{display: flex; position: fixed; align-items: center; justify-content: space-between; bottom: 0; left: 0; z-index: 100; height: 3.4rem; width: 100%; background: #f9f9f9; padding: 1rem 1.6rem;}
+.popup_btn{display: flex; position: absolute; align-items: center; justify-content: space-between; bottom: 0; left: 0; z-index: 100; height: 3.4rem; width: 100%; background: #f9f9f9; padding: 1rem 1.6rem;}
 .popup_arrow{max-width: 1.6rem; width: 100%; height: 1.6rem;}
 .popup_icon{max-width: 1.4rem; width: 100%; height: 1.4rem; margin-right: 0.4rem;}
 .flex_left{display: flex; align-items: center;}
@@ -92,7 +92,7 @@ p.num{max-width: 7.4rem; width: 100%;}
 .option_select{font-weight: 700; background: #f9fdf3;}
 
 
-.popup_stroke{margin: 0 2rem; background: #F0F0F0;}
+.popup_stroke{margin: 0 1.6rem; background: #F0F0F0;}
 .popup_header_stroke{background: #e0e0e0;}
 
 .popup_wrap_on{top: 100%;}
@@ -116,7 +116,7 @@ p.num{max-width: 7.4rem; width: 100%;}
 .op_back{display: none; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; background: #fff; opacity: 0;z-index: 10;}
 .op_back_on{display: block; touch-action: none;}
 
-.right_popup_wrap{position: fixed;left: 200%; top: 4rem; transform: translateX(-100%); transition: all 0.2s ease-in-out; height: calc(100vh - 4rem); width: 23.1rem; background: #f9f9f9; border: 0.1rem solid #e0e0e0; border-top-left-radius: 20px; padding: 1.6rem 1.6rem 0;}
+.right_popup_wrap{position: fixed;left: 200%; top: 4rem; transform: translateX(-100%); transition: all 0.2s ease-in-out; height: calc(100vh - 4rem); width: 23.1rem; background: #f9f9f9; border: 0.1rem solid #e0e0e0; border-top-left-radius: 20px; padding: 1.6rem 1.6rem 0; z-index: 100;}
 .right_popup_on{left: 100%;}
 .btn_wrap{display: flex; justify-content: space-between; margin-bottom: 1.3rem;}
 .btn_wrap div{display: flex;}
