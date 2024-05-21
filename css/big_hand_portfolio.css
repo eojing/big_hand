@@ -17,6 +17,7 @@ header{position: sticky; top: 0; background: #fff; z-index: 10;}
     overflow: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    padding: 0 1.6rem;
 }
 .scroll_wrap::-webkit-scrollbar{
     display: none;
@@ -38,7 +39,7 @@ header{position: sticky; top: 0; background: #fff; z-index: 10;}
     background: transparent;  /* Optional: just make scrollbar invisible */
     -webkit-appearance: none;
     }
-.big_hand_group{width: 50.7rem; padding: 0 1.6rem;}
+.big_hand_group{width: 47.2rem;}
 .big_hand_group::after{content: ''; display: block; clear: both;}
 .big_hand_name{display: inline-block; text-align: center; padding: 0.5rem 1.3rem; border-radius: 10rem; border: 0.1rem solid #e0e0e0; float: left; background: #fff;}
 .big_hand_name_on{background: #2c363b; border: 0.1rem solid #2c363b; color: #fff;}
